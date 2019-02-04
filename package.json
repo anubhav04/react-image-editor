@@ -1,6 +1,6 @@
 {
   "name": "react-cropper-image-editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Image editor built on top of CropperJs",
   "main": "dist/react-image-editor.js",
   "scripts": {
@@ -28,7 +28,9 @@
     "image rotator for react",
     "image rotator for reactjs",
     "image cropper for react",
-    "image cropper for reactjs"
+    "image cropper for reactjs",
+    "crop image react",
+    "crop image reactjs"
   ],
   "license": "MIT",
   "repository": {
