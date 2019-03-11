@@ -56,6 +56,7 @@ class ImageEditorRc extends Component {
     };
     this.rotateToLeft = this.rotateToLeft.bind(this);
     this.rotateToRight = this.rotateToRight.bind(this);
+    this.crop = this.crop.bind(this);
   }
   componentDidMount() {
     const options = Object.keys(this.props)
@@ -176,10 +177,10 @@ class ImageEditorRc extends Component {
     return this.cropper.getData(rounded);
   }
 
-  crop(options) {
+  crop(options, cb) {
     this.setState({
       image: this.cropper.getCroppedCanvas(options),
-    });
+    }, cb);
   }
 
   move(offsetX, offsetY) {
@@ -283,7 +284,7 @@ class ImageEditorRc extends Component {
         <ul >
           <li><button onClick={() => this.rotateToRight()}>Rotate Right</button></li>
           <li><button onClick={() => this.rotateToLeft()}>Rotate Left</button></li>
-          <li><button onClick={() => this.saveImage()}>Save</button></li>
+          <li><button onClick={() => this.crop(this.props, this.saveImage)}>Save</button></li>
         </ul>
       </div>
     );

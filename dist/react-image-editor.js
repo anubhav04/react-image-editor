@@ -50,6 +50,7 @@ var ImageEditorRc = function (_Component) {
     };
     _this.rotateToLeft = _this.rotateToLeft.bind(_this);
     _this.rotateToRight = _this.rotateToRight.bind(_this);
+    _this.crop = _this.crop.bind(_this);
     return _this;
   }
 
@@ -192,10 +193,10 @@ var ImageEditorRc = function (_Component) {
     }
   }, {
     key: 'crop',
-    value: function crop(options) {
+    value: function crop(options, cb) {
       this.setState({
         image: this.cropper.getCroppedCanvas(options)
-      });
+      }, cb);
     }
   }, {
     key: 'move',
@@ -352,7 +353,7 @@ var ImageEditorRc = function (_Component) {
             _react2.default.createElement(
               'button',
               { onClick: function onClick() {
-                  return _this5.saveImage();
+                  return _this5.crop(_this5.props, _this5.saveImage);
                 } },
               'Save'
             )
