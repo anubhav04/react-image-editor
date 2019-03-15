@@ -1,6 +1,6 @@
 {
   "name": "react-cropper-image-editor",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Image editor built on top of CropperJs",
   "main": "dist/react-image-editor.js",
   "scripts": {
