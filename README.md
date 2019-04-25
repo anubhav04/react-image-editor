@@ -1,4 +1,4 @@
-# react-image-editor
+# react-cropper-image-editor
 
 [Cropperjs](https://github.com/fengyuanchen/cropperjs) as React components
 
@@ -11,7 +11,7 @@
 
 ## Installation
 
-Install via [npm](https://www.npmjs.com/package/react-image-editor)
+Install via [npm](https://www.npmjs.com/package/react-cropper-image-editor)
 
 ```shell
 npm install --save react-cropper-image-editor
@@ -19,7 +19,7 @@ yarn add react-cropper-image-editor
 ```
 
 You need `cropper.css` in your project which is from [cropperjs](https://www.npmjs.com/package/cropperjs).
-Since this project have dependency on [cropperjs](https://www.npmjs.com/package/cropperjs), it located in `/node_modules/react-image-editor/node_modules/cropperjs/dist/cropper.css` or `node_modules/cropperjs/dist/cropper.css` for npm version `3.0.0` later
+Since this project have dependency on [cropperjs](https://www.npmjs.com/package/cropperjs), it located in `/node_modules/react-cropper-image-editor/node_modules/cropperjs/dist/cropper.css` or `node_modules/cropperjs/dist/cropper.css` for npm version `3.0.0` later
 
 # Changelog
 
